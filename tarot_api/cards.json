@@ -1,0 +1,787 @@
+[
+    {
+        "name": "Card Back",
+        "image_url": "/static/images/back.jpg",
+        "description": "This is the back of a tarot card. Use it when the card is face-down."
+    },
+    {
+        "id": "1",
+        "name": "The Fool",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "New beginnings, optimism, trust in life",
+        "reversed_meaning": "Recklessness, taken advantage of, inconsideration",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/fool.jpg"
+    },
+    {
+        "id": "2",
+        "name": "The Magician",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Willpower, desire, creation, manifestation",
+        "reversed_meaning": "Trickery, illusions, out of touch",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/magician.jpg"
+    },
+    {
+        "id": "3",
+        "name": "The High Priestess",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Intuition, unconscious, inner voice",
+        "reversed_meaning": "Lack of center, lost inner voice, repressed feelings",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/major_arcana/high_priestess.jpg"
+    },
+    {
+        "id": "4",
+        "name": "The Empress",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Motherhood, fertility, nature",
+        "reversed_meaning": "Dependence, smothering, emptiness, nosiness",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/empress.jpg"
+    },
+    {
+        "id": "5",
+        "name": "The Emperor",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Authority, structure, control, fatherhood",
+        "reversed_meaning": "Tyranny, rigidity, coldness",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/emperor.jpg"
+    },
+    {
+        "id": "6",
+        "name": "The Hierophant",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Tradition, conformity, morality, ethics",
+        "reversed_meaning": "Rebellion, subversiveness, new approaches",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/major_arcana/hierophant.jpg"
+    },
+    {
+        "id": "7",
+        "name": "The Lovers",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Partnerships, duality, union",
+        "reversed_meaning": "Loss of balance, one-sidedness, disharmony",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/lovers.jpg"
+    },
+    {
+        "id": "8",
+        "name": "The Chariot",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Direction, control, willpower",
+        "reversed_meaning": "Lack of control, lack of direction, aggression",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/chariot.jpg"
+    },
+    {
+        "id": "9",
+        "name": "Strength",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Courage, bravery, confidence, compassion",
+        "reversed_meaning": "Self-doubt, weakness, insecurity",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/strength.jpg"
+    },
+    {
+        "id": "10",
+        "name": "The Hermit",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Contemplation, search for truth, inner guidance",
+        "reversed_meaning": "Loneliness, isolation, lost your way",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/major_arcana/hermit.jpg"
+    },
+    {
+        "id": "11",
+        "name": "Wheel of Fortune",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Change, cycles, inevitable fate",
+        "reversed_meaning": "No control, clinging to control, bad luck",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/wheel_of_fortune.jpg"
+    },
+    {
+        "id": "12",
+        "name": "Justice",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Cause and effect, clarity, truth",
+        "reversed_meaning": "Dishonesty, unaccountability, unfairness",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/justice.jpg"
+    },
+    {
+        "id": "13",
+        "name": "The Hanged Man",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Sacrifice, release, martyrdom",
+        "reversed_meaning": "Stalling, needless sacrifice, fear of sacrifice",
+        "yes_no": "No",
+        "image_url": "/static/images/major_arcana/hanged_man.jpg"
+    },
+    {
+        "id": "14",
+        "name": "Death",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "End of cycle, beginnings, change, metamorphosis",
+        "reversed_meaning": "Fear of change, holding on, stagnation",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/death.jpg"
+    },
+    {
+        "id": "15",
+        "name": "Temperance",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Middle path, patience, finding meaning",
+        "reversed_meaning": "Extremes, excess, lack of balance",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/temperance.jpg"
+    },
+    {
+        "id": "16",
+        "name": "The Devil",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Addiction, materialism, playfulness",
+        "reversed_meaning": "Freedom, release, restoring control",
+        "yes_no": "No",
+        "image_url": "/static/images/major_arcana/devil.jpg"
+    },
+    {
+        "id": "17",
+        "name": "The Tower",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Sudden upheaval, broken pride, disaster",
+        "reversed_meaning": "Disaster avoided, delayed disaster, fear of suffering",
+        "yes_no": "No",
+        "image_url": "/static/images/major_arcana/tower.jpg"
+    },
+    {
+        "id": "18",
+        "name": "The Star",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Hope, faith, rejuvenation",
+        "reversed_meaning": "Faithlessness, discouragement, insecurity",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/star.jpg"
+    },
+    {
+        "id": "19",
+        "name": "The Moon",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Unconscious, illusions, intuition",
+        "reversed_meaning": "Confusion, fear, misinterpretation",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/major_arcana/moon.jpg"
+    },
+    {
+        "id": "20",
+        "name": "The Sun",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Joy, success, celebration, positivity",
+        "reversed_meaning": "Negativity, depression, sadness",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/sun.jpg"
+    },
+    {
+        "id": "21",
+        "name": "Judgement",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Reflection, reckoning, awakening",
+        "reversed_meaning": "Lack of self awareness, doubt, self loathing",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/judgement.jpg"
+    },
+    {
+        "id": "22",
+        "name": "The World",
+        "suit": null,
+        "arcana": "Major Arcana",
+        "upright_meaning": "Fulfillment, harmony, completion",
+        "reversed_meaning": "Incompletion, no closure",
+        "yes_no": "Yes",
+        "image_url": "/static/images/major_arcana/world.jpg"
+    },
+    {
+        "id": "23",
+        "name": "Ace of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Love, new relationships, compassion, creativity",
+        "reversed_meaning": "Blocked or repressed emotions",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/ace_of_cups.jpg"
+    },
+    {
+        "id": "24",
+        "name": "Two of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Unified love, partnership, mutual attraction",
+        "reversed_meaning": "Break-up, imbalance in a relationship, lack of harmony",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/two_of_cups.jpg"
+    },
+    {
+        "id": "25",
+        "name": "Three of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Celebration, friendship, creativity, collaborations",
+        "reversed_meaning": "An affair, 'three's a crowd', stifled creativity",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/three_of_cups.jpg"
+    },
+    {
+        "id": "26",
+        "name": "Four of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Meditation, contemplation, apathy, reevaluation",
+        "reversed_meaning": "Boredom, missed opportunity, being aloof",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/cups/four_of_cups.jpg"
+    },
+    {
+        "id": "27",
+        "name": "Five of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Loss, regret, disappointment, despair, bereavement",
+        "reversed_meaning": "Moving on, acceptance, forgiveness",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/cups/five_of_cups.jpg"
+    },
+    {
+        "id": "28",
+        "name": "Six of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Revisiting the past, childhood memories, innocence, joy",
+        "reversed_meaning": "Stuck in the past, naive, unrealistic",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/six_of_cups.jpg"
+    },
+    {
+        "id": "29",
+        "name": "Seven of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Opportunities, choices, wishful thinking, illusion",
+        "reversed_meaning": "Lack of purpose, diversion, confusion",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/cups/seven_of_cups.jpg"
+    },
+    {
+        "id": "30",
+        "name": "Eight of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Disappointment, abandonment, withdrawal, escapism",
+        "reversed_meaning": "Avoidance, fear of change, fear of loss",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/cups/eight_of_cups.jpg"
+    },
+    {
+        "id": "31",
+        "name": "Nine of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Contentment, satisfaction, gratitude, wish come true",
+        "reversed_meaning": "Greed, dissatisfaction, materialism",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/nine_of_cups.jpg"
+    },
+    {
+        "id": "32",
+        "name": "Ten of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Divine love, blissful relationships, harmony, alignment",
+        "reversed_meaning": "Disconnection, misaligned values, struggling relationships",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/ten_of_cups.jpg"
+    },
+    {
+        "id": "33",
+        "name": "Page of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Creative opportunities, intuitive messages, curiosity, possibility",
+        "reversed_meaning": "Emotional immaturity, creative blocks",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/page_of_cups.jpg"
+    },
+    {
+        "id": "34",
+        "name": "Knight of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Romance, charm, imagination, beauty",
+        "reversed_meaning": "Overactive imagination, jealousy, moodiness",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/knight_of_cups.jpg"
+    },
+    {
+        "id": "35",
+        "name": "Queen of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Compassion, calm, comfort, emotional security",
+        "reversed_meaning": "Insecurity, dependence, martyrdom",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/queen_of_cups.jpg"
+    },
+    {
+        "id": "36",
+        "name": "King of Cups",
+        "suit": "Cups",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Emotional balance and control, generosity",
+        "reversed_meaning": "Emotional manipulation, moodiness, volatility",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/cups/king_of_cups.jpg"
+    },
+    {
+        "id": "37",
+        "name": "Ace of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Manifestation, new financial opportunity, prosperity",
+        "reversed_meaning": "Lost opportunity, lack of planning and foresight",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/ace_of_pentacles.jpg"
+    },
+    {
+        "id": "38",
+        "name": "Two of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Multiple priorities, time management, adaptability",
+        "reversed_meaning": "Over-committed, disorganization, reprioritization",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/pentacles/two_of_pentacles.jpg"
+    },
+    {
+        "id": "39",
+        "name": "Three of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Teamwork, collaboration, learning, implementation",
+        "reversed_meaning": "Lack of teamwork, disorganization, group conflict",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/three_of_pentacles.jpg"
+    },
+    {
+        "id": "40",
+        "name": "Four of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Saving money, security, conservatism, scarcity",
+        "reversed_meaning": "Over-spending, greed, self-protection",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/pentacles/four_of_pentacles.jpg"
+    },
+    {
+        "id": "41",
+        "name": "Five of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Financial loss, poverty, lack mindset, isolation",
+        "reversed_meaning": "Recovery from financial loss, spiritual poverty",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/pentacles/five_of_pentacles.jpg"
+    },
+    {
+        "id": "42",
+        "name": "Six of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Giving, receiving, sharing wealth, generosity",
+        "reversed_meaning": "Selfishness, debt, one-sided charity",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/six_of_pentacles.jpg"
+    },
+    {
+        "id": "43",
+        "name": "Seven of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Long-term view, perseverance, investment",
+        "reversed_meaning": "Lack of long-term vision, limited success or reward",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/pentacles/seven_of_pentacles.jpg"
+    },
+    {
+        "id": "44",
+        "name": "Eight of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Apprenticeship, repetitive tasks, mastery, skill development",
+        "reversed_meaning": "Perfectionism, lacking ambition or focus",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/eight_of_pentacles.jpg"
+    },
+    {
+        "id": "45",
+        "name": "Nine of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Abundance, luxury, self-sufficiency, financial independence",
+        "reversed_meaning": "Self-worth issues, over-investment in work",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/nine_of_pentacles.jpg"
+    },
+    {
+        "id": "46",
+        "name": "Ten of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Wealth, financial security, family, long-term success",
+        "reversed_meaning": "Financial failure, loneliness, loss",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/ten_of_pentacles.jpg"
+    },
+    {
+        "id": "47",
+        "name": "Page of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Manifestation, financial opportunity, skill development",
+        "reversed_meaning": "Lack of progress, procrastination, short-term focus",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/page_of_pentacles.jpg"
+    },
+    {
+        "id": "48",
+        "name": "Knight of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Hard work, productivity, routine, conservatism",
+        "reversed_meaning": "Self-discipline issues, boredom, feeling stuck",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/knight_of_pentacles.jpg"
+    },
+    {
+        "id": "49",
+        "name": "Queen of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Nurturing, practicality, providing financially",
+        "reversed_meaning": "Imbalance between work/home, financial dependence",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/queen_of_pentacles.jpg"
+    },
+    {
+        "id": "50",
+        "name": "King of Pentacles",
+        "suit": "Pentacles",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Wealth, business, leadership, security, discipline",
+        "reversed_meaning": "Greed, indulgence, financial dependence",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/pentacles/king_of_pentacles.jpg"
+    },
+    {
+        "id": "51",
+        "name": "Ace of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Breakthroughs, new ideas, mental clarity, success",
+        "reversed_meaning": "Confusion, miscommunication, hostility",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/swords/ace_of_swords.jpg"
+    },
+    {
+        "id": "52",
+        "name": "Two of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Difficult decisions, weighing options, avoidance",
+        "reversed_meaning": "Indecision, confusion, information overload",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/swords/two_of_swords.jpg"
+    },
+    {
+        "id": "53",
+        "name": "Three of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Heartbreak, emotional pain, sorrow, grief, hurt",
+        "reversed_meaning": "Recovery, forgiveness, releasing pain",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/three_of_swords.jpg"
+    },
+    {
+        "id": "54",
+        "name": "Four of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Rest, relaxation, meditation, contemplation, recuperation",
+        "reversed_meaning": "Restlessness, burnout, stress, lack of progress",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/four_of_swords.jpg"
+    },
+    {
+        "id": "55",
+        "name": "Five of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Conflict, disagreements, defeat, betrayal, competition",
+        "reversed_meaning": "Reconciliation, making amends, past resentment",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/five_of_swords.jpg"
+    },
+    {
+        "id": "56",
+        "name": "Six of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Transition, change, rite of passage, releasing baggage",
+        "reversed_meaning": "Resistance to change, unfinished business",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/swords/six_of_swords.jpg"
+    },
+    {
+        "id": "57",
+        "name": "Seven of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Betrayal, deception, strategy, tactics, manipulation",
+        "reversed_meaning": "Coming clean, rethinking approach, self-deception",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/seven_of_swords.jpg"
+    },
+    {
+        "id": "58",
+        "name": "Eight of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Imprisonment, victim mentality, limiting beliefs",
+        "reversed_meaning": "Freedom, release, finding solutions",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/eight_of_swords.jpg"
+    },
+    {
+        "id": "59",
+        "name": "Nine of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Anxiety, worry, fear, depression, nightmares",
+        "reversed_meaning": "Inner turmoil, deep fears, secrets, healing",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/nine_of_swords.jpg"
+    },
+    {
+        "id": "60",
+        "name": "Ten of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Painful endings, betrayal, loss, crisis",
+        "reversed_meaning": "Recovery, regeneration, resisting an inevitable end",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/swords/ten_of_swords.jpg"
+    },
+    {
+        "id": "61",
+        "name": "Page of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Curiosity, mental energy, new ideas, vigilance",
+        "reversed_meaning": "Deception, manipulation, all talk and no action",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/swords//page_of_swords.jpg"
+    },
+    {
+        "id": "62",
+        "name": "Knight of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Ambition, action, quick thinking, determination",
+        "reversed_meaning": "Recklessness, arrogance, disregard for consequences",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/swords/knight_of_swords.jpg"
+    },
+    {
+        "id": "63",
+        "name": "Queen of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Independence, unbiased judgment, clear boundaries",
+        "reversed_meaning": "Cold-heartedness, bitterness, cruelty",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/swords/queen_of_swords.jpg"
+    },
+    {
+        "id": "64",
+        "name": "King of Swords",
+        "suit": "Swords",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Mental clarity, authority, truth, intellectual power",
+        "reversed_meaning": "Manipulation, misuse of power, corruption",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/swords/king_of_swords.jpg"
+    },
+    {
+        "id": "65",
+        "name": "Ace of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Breakthroughs, new ideas, mental clarity, success",
+        "reversed_meaning": "Confusion, miscommunication, hostility",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/wands/ace_of_wands.jpg"
+    },
+    {
+        "id": "66",
+        "name": "Two of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Difficult decisions, weighing options, avoidance",
+        "reversed_meaning": "Indecision, confusion, information overload",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/wands/two_of_wands.jpg"
+    },
+    {
+        "id": "67",
+        "name": "Three of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Heartbreak, emotional pain, sorrow, grief, hurt",
+        "reversed_meaning": "Recovery, forgiveness, releasing pain",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/three_of_wands.jpg"
+    },
+    {
+        "id": "68",
+        "name": "Four of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Rest, relaxation, meditation, contemplation, recuperation",
+        "reversed_meaning": "Restlessness, burnout, stress, lack of progress",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/four_of_wands.jpg"
+    },
+    {
+        "id": "69",
+        "name": "Five of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Conflict, disagreements, defeat, betrayal, competition",
+        "reversed_meaning": "Reconciliation, making amends, past resentment",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/five_of_wands.jpg"
+    },
+    {
+        "id": "70",
+        "name": "Six of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Transition, change, rite of passage, releasing baggage",
+        "reversed_meaning": "Resistance to change, unfinished business",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/wands/six_of_wands.jpg"
+    },
+    {
+        "id": "71",
+        "name": "Seven of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Betrayal, deception, strategy, tactics, manipulation",
+        "reversed_meaning": "Coming clean, rethinking approach, self-deception",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/seven_of_wands.jpg"
+    },
+    {
+        "id": "72",
+        "name": "Eight of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Imprisonment, victim mentality, limiting beliefs",
+        "reversed_meaning": "Freedom, release, finding solutions",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/eight_of_wands.jpg"
+    },
+    {
+        "id": "73",
+        "name": "Nine of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Anxiety, worry, fear, depression, nightmares",
+        "reversed_meaning": "Inner turmoil, deep fears, secrets, healing",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/nine_of_wands.jpg"
+    },
+    {
+        "id": "74",
+        "name": "Ten of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Painful endings, betrayal, loss, crisis",
+        "reversed_meaning": "Recovery, regeneration, resisting an inevitable end",
+        "yes_no": "No",
+        "image_url": "/static/images/minor_arcana/wands/ten_of_wands.jpg"
+    },
+    {
+        "id": "75",
+        "name": "Page of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Curiosity, mental energy, new ideas, vigilance",
+        "reversed_meaning": "Deception, manipulation, all talk and no action",
+        "yes_no": "Maybe",
+        "image_url": "/static/images/minor_arcana/wands/page_of_wands.jpg"
+    },
+    {
+        "id": "76",
+        "name": "Knight of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Ambition, action, quick thinking, determination",
+        "reversed_meaning": "Recklessness, arrogance, disregard for consequences",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/wands/knight_of_wands.jpg"
+    },
+    {
+        "id": "77",
+        "name": "Queen of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Independence, unbiased judgment, clear boundaries",
+        "reversed_meaning": "Cold-heartedness, bitterness, cruelty",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/wands/queen_of_wands.jpg"
+    },
+    {
+        "id": "78",
+        "name": "King of Wands",
+        "suit": "Wands",
+        "arcana": "Minor Arcana",
+        "upright_meaning": "Mental clarity, authority, truth, intellectual power",
+        "reversed_meaning": "Manipulation, misuse of power, corruption",
+        "yes_no": "Yes",
+        "image_url": "/static/images/minor_arcana/wands/king_of_wands.jpg"
+    }
+]
