@@ -1,9 +1,12 @@
-import json, os
+# tarot_api/seed.py
+import json
+import os
 from .app import create_app
 from .models import Card, db
 
 HERE = os.path.dirname(__file__)
 CARDS_JSON = os.path.join(HERE, "cards.json")
+
 
 def load_cards():
     """Load tarot cards from cards.json into a list of dicts for bulk insert."""
@@ -37,7 +40,10 @@ def load_cards():
 def run_seed(drop=None):
     """
     Seed the database with tarot cards.
-    Set SEED_DROP=true in env to drop & recreate tables before insert.
+
+    Behaviour:
+      - If SEED_DROP=true (or drop=True), drop & recreate tables, then insert all.
+      - Otherwise, create tables if missing and insert only missing rows (idempotent).
     """
     if drop is None:
         drop = os.getenv("SEED_DROP", "false").lower() == "true"
@@ -48,14 +54,27 @@ def run_seed(drop=None):
             db.drop_all()
         db.create_all()
 
-        if drop:
-            db.session.query(Card).delete()
-
         cards = load_cards()
-        db.session.bulk_insert_mappings(Card, cards)
-        db.session.commit()
 
-        print(f"Seeded {len(cards)} cards into the database.")
+        if drop:
+            # Full reset
+            db.session.query(Card).delete(synchronize_session=False)
+            db.session.bulk_insert_mappings(Card, cards)
+            db.session.commit()
+            total = db.session.query(Card).count()
+            print(f"✅ Seeded ALL {total} cards (after drop).")
+            return
+
+        # Idempotent insert: add only missing IDs
+        existing_ids = {cid for (cid,) in db.session.query(Card.id).all()}
+        new_rows = [row for row in cards if row["id"] not in existing_ids]
+
+        if new_rows:
+            db.session.bulk_insert_mappings(Card, new_rows)
+            db.session.commit()
+
+        total = db.session.query(Card).count()
+        print(f"Seed complete. Added {len(new_rows)} new cards. Total now {total}.")
 
 
 if __name__ == "__main__":
