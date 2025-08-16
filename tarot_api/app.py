@@ -2,24 +2,23 @@ import os
 from flask import Flask, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
-from .models import db  # import shared db from models.py
+from .models import db
 
-# Load .env from project root (one level above the tarot_api/ package)
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 load_dotenv(os.path.join(BASE_DIR, ".env"))
-
-# Create exactly ONE global SQLAlchemy() object that models import
-# db = SQLAlchemy()
 
 def create_app() -> Flask:
     app = Flask(__name__)
 
-    # ----- DB URL (Postgres only, per your preference) -----
     db_url = os.getenv("DATABASE_URL")
     if not db_url:
         raise RuntimeError("DATABASE_URL is required (Postgres).")
+
+    # Normalize to psycopg3
     if db_url.startswith("postgres://"):
-        db_url = db_url.replace("postgres://", "postgresql+psycopg2://", 1)
+        db_url = db_url.replace("postgres://", "postgresql+psycopg://", 1)
+    elif db_url.startswith("postgresql://") and "+psycopg" not in db_url and "+psycopg2" not in db_url:
+        db_url = db_url.replace("postgresql://", "postgresql+psycopg://", 1)
 
     app.config.update(
         SQLALCHEMY_DATABASE_URI=db_url,
@@ -27,18 +26,16 @@ def create_app() -> Flask:
         JSON_SORT_KEYS=False,
     )
 
-    # ----- CORS -----
+    # Allow comma-separated origins: "http://localhost:5173,https://your-site.com"
     cors_origin = os.getenv("CORS_ORIGIN", "http://localhost:5173")
-    CORS(app, resources={r"*": {"origins": [cors_origin]}})
+    origins = [o.strip() for o in cors_origin.split(",") if o.strip()]
+    CORS(app, resources={r"*": {"origins": origins}})
 
-    # ----- DB init (bind the ONE db instance to THIS app) -----
     db.init_app(app)
 
-    # ----- Routes -----
     from .routes import api_bp
     app.register_blueprint(api_bp)
 
-    # ----- Errors -----
     @app.errorhandler(404)
     def not_found(_err):
         return jsonify(error="Not Found"), 404
@@ -49,10 +46,6 @@ def create_app() -> Flask:
 
     return app
 
-# IMPORTANT:
-# Do NOT create a global `app = create_app()` here.
-# Use the factory via FLASK_APP=tarot_api.app:create_app (see commands below).
 if __name__ == "__main__":
-    # Running directly as a script (optional)
     app = create_app()
     app.run(host="0.0.0.0", port=int(os.getenv("PORT", 5001)), debug=True)
