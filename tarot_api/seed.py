@@ -30,13 +30,19 @@ def load_cards():
         })
     return rows
 
-def run_seed(drop=True):
+def run_seed(drop=None):
+    # default: don't drop in prod
+    if drop is None:
+        drop = os.getenv("SEED_DROP", "false").lower() == "true"
+
     app = create_app()
     with app.app_context():
         if drop:
             db.drop_all()
         db.create_all()
-        db.session.query(Card).delete()
+        # upsert-ish: clear only if dropping; otherwise only insert missing
+        if drop:
+            db.session.query(Card).delete()
 
         cards = load_cards()
         db.session.bulk_insert_mappings(Card, load_cards())
