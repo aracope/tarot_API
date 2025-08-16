@@ -6,9 +6,11 @@ HERE = os.path.dirname(__file__)
 CARDS_JSON = os.path.join(HERE, "cards.json")
 
 def load_cards():
+    """Load tarot cards from cards.json into a list of dicts for bulk insert."""
     with open(CARDS_JSON, "r", encoding="utf-8") as f:
         raw = json.load(f)
-    rows = []
+
+    cards = []
     for item in raw:
         if not isinstance(item, dict):
             continue
@@ -16,9 +18,10 @@ def load_cards():
             continue
         try:
             item_id = int(item["id"])
-        except Exception:
+        except (ValueError, TypeError):
             continue
-        rows.append({
+
+        cards.append({
             "id": item_id,
             "name": item.get("name"),
             "arcana": item.get("arcana"),
@@ -28,10 +31,14 @@ def load_cards():
             "yes_no": item.get("yes_no"),
             "image_url": item.get("image_url"),
         })
-    return rows
+    return cards
+
 
 def run_seed(drop=None):
-    # default: don't drop in prod
+    """
+    Seed the database with tarot cards.
+    Set SEED_DROP=true in env to drop & recreate tables before insert.
+    """
     if drop is None:
         drop = os.getenv("SEED_DROP", "false").lower() == "true"
 
@@ -40,14 +47,16 @@ def run_seed(drop=None):
         if drop:
             db.drop_all()
         db.create_all()
-        # upsert-ish: clear only if dropping; otherwise only insert missing
+
         if drop:
             db.session.query(Card).delete()
 
         cards = load_cards()
-        db.session.bulk_insert_mappings(Card, load_cards())
+        db.session.bulk_insert_mappings(Card, cards)
         db.session.commit()
-        print(f" Seeded {len(cards)} cards.")
+
+        print(f"Seeded {len(cards)} cards into the database.")
+
 
 if __name__ == "__main__":
     run_seed()
