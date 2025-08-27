@@ -1,4 +1,3 @@
-# tarot_api/seed.py
 import json
 import os
 from .app import create_app
@@ -62,7 +61,7 @@ def run_seed(drop=None):
             db.session.bulk_insert_mappings(Card, cards)
             db.session.commit()
             total = db.session.query(Card).count()
-            print(f"✅ Seeded ALL {total} cards (after drop).")
+            print(f" Seeded ALL {total} cards (after drop).")
             return
 
         # Idempotent insert: add only missing IDs

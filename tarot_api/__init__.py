@@ -1,8 +1,3 @@
-from .app import create_app
-from .models import db
-
-
-
 import json, os
 from .app import create_app
 from .models import Card, db
