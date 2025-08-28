@@ -7,8 +7,6 @@ A minimal JSON API for tarot cards. Supports listing/filtering cards, fetching a
 - **Auth:** None (public)
 - **CORS:** Allowed origins are controlled via `CORS_ORIGIN` env var (comma-separated). Default includes `http://localhost:5173`.
 
-> Replace `<BASE_URL>` in examples with your actual Render domain.
-
 ---
 
 ## 📦 Card object
@@ -56,17 +54,17 @@ A minimal JSON API for tarot cards. Supports listing/filtering cards, fetching a
 
 ### First 3 cards
 ```bash
-curl -s "<BASE_URL>/cards?limit=3" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/cards?limit=3" | jq
 ```
 
 ### Only Major Arcana
 ```bash
-curl -s "<BASE_URL>/cards?arcana=Major%20Arcana&limit=5" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/cards?arcana=Major%20Arcana&limit=5" | jq
 ```
 
 ### Minor / Cups containing "Queen"
 ```bash
-curl -s "<BASE_URL>/cards?arcana=Minor%20Arcana&suit=Cups&q=Queen" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/cards?arcana=Minor%20Arcana&suit=Cups&q=Queen" | jq
 ```
 
 ## Errors
@@ -79,7 +77,7 @@ Fetch a single card by numeric id.
 
 ## Examples
 ```bash
-curl -s "<BASE_URL>/cards/1" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/cards/1" | jq
 ```
 
 ## Errors
@@ -106,12 +104,12 @@ curl -s "<BASE_URL>/cards/1" | jq
 
 ### One random card
 ```bash
-curl -s -X POST "<BASE_URL>/draw" | jq
+curl -s -X POST "https://tarot-api-lnhc.onrender.com/draw" | jq
 ```
 
 ### Three random cards
 ```bash
-curl -s -X POST "<BASE_URL>/draw?count=3" | jq
+curl -s -X POST "https://tarot-api-lnhc.onrender.com/draw?count=3" | jq
 ```
 
 ## Errors
@@ -138,17 +136,17 @@ curl -s -X POST "<BASE_URL>/draw?count=3" | jq
 
 ### Today’s card
 ```bash
-curl -s "<BASE_URL>/daily" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/daily" | jq
 ```
 
 ### Specific date
 ```bash
-curl -s "<BASE_URL>/daily?date=2025-08-27" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/daily?date=2025-08-27" | jq
 ```
 
 ### Personalized (stable per seed+date)
 ```bash
-curl -s "<BASE_URL>/daily?seed=ara&date=2025-08-27" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/daily?seed=ara&date=2025-08-27" | jq
 ```
 
 ## Errors
@@ -172,7 +170,7 @@ curl -s "<BASE_URL>/daily?seed=ara&date=2025-08-27" | jq
 
 ## Example
 ```bash
-curl -s "<BASE_URL>/yesno" | jq
+curl -s "https://tarot-api-lnhc.onrender.com/yesno" | jq
 ```
 
 ## Errors
